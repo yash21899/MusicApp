@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(228, 253, 253);
+    /* background: rgb(253, 253, 253); */
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 35rem;
+    height: 55rem;
+    background: #fff;
+    box-shadow: 0.1rem 0.1rem 1.2rem .1rem #000;
+    border-radius: 1rem;
+    /* text-align: center; */
+    padding: 10px;
+}
+.music_div{
+    width: auto;
+    height: 100%;
+    /* background: #fff; */
+    box-shadow: 0.1rem 0.1rem 1rem 0rem orange;
+    /* border: orange; */
+    border-radius: 1rem;
+    text-align: center;
+    padding: 50px;
+}
+h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.img_div img{
+    box-shadow: 0.1rem 0.1rem 1.7rem .2rem rgb(10, 22, 90);
+    width: 100%;
+    height: 100%;
+    margin: 40px 0 30px 0;
+    border-radius: 50%;
+}
+.controls_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .controls_div .fa-backward, .controls_div .fa-forward{
+    background: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+} */
+.controls_div .fa-backword:hover{
+    background: gold;
+}
+/* .controls_div .fa-backword{
+    filter: drop-shadow(1rem 2rem 3rem 0.5rem rgba(0,0,0,0.5));
+} */
+.controls_div .fa-play, .controls_div .fa-pause{
+    padding: 20px;
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    /* border-color: red; */
+    /* box-shadow: 10px #000; */
+}
+.fa-play:hover,.fa-pause:hover{
+    background: gold;
+    color: #000;
+}
+.anime{
+    animation: rotateplayer 5s linear infinite;
+}
+@keyframes rotateplayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.progress_container{
+    margin: 0 0 30px 0;
+}
+.progress_duration{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.progress_div{
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: .5rem;
+    box-shadow: .1rem .1rem 1rem .1rem rgb(0,0,0,0.5);
+    border-radius: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: blue;
+    border-radius: 3rem;
+    transition: width linear;
+}
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+  }

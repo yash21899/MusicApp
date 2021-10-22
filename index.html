@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music App</title>
+</head>
+<body>
+
+    <div class="main_div">
+        <div class="container">
+            <div class="music_div">
+                <h2 id="title">Golmaal Again</h2>
+                <div class="img_div">
+                    <img src="images/golmaal.jpg" alt="">
+                </div>
+                <audio src="music/Golmaal Again.mpeg"></audio>
+                <div class="progress_container" id="progress_container">
+                    <div class="progress_duration">
+                        <div id="startd">0:00</div>
+                        <div id="endd">4:24</div>
+                    </div>
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+                <div class="controls_div">
+                    <i id="pre" class="fas fa-2x fa-backward" title="Previous"></i>
+                    <i id="plays" class="fas fa-2x fa-play" title="Play"></i>
+                    <i id="nex" class="fas fa-2x fa-forward" title="Next"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
